@@ -1,0 +1,38 @@
+.nav_container {
+  background-color: var(--primary-color);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.navbar .navlinks {
+}
+
+.navbar .navlinks {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar .navlinks li {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 725px) {
+  .navbar .navlinks {
+    width: 70%;
+  }
+}

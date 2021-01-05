@@ -1,0 +1,77 @@
+.homepage_container {
+  background-color: var(--secondary-color);
+  padding: 100px 0;
+}
+.homepage {
+  width: 75%;
+  margin: auto;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage .left_hero {
+  width: 48%;
+}
+
+.homepage .left_hero h3 {
+  color: var(--little-color);
+  margin-bottom: 1em;
+}
+
+.homepage .left_hero h1 {
+  margin-bottom: 0.7em;
+}
+.homepage .left_hero p {
+  line-height: 25px;
+}
+.homepage .left_hero h2 {
+  margin: 25px 0;
+}
+
+.homepage .left_hero .btn {
+  padding: 15px 20px;
+  margin-right: 20px;
+  /* margin-top: 20px; */
+  border-radius: 20px;
+  border: none;
+}
+.homepage .left_hero .btn.download {
+  background-color: var(--little-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.homepage .left_hero .btn.hire {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--little-color);
+  color: var(--little-color);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.homepage .right_hero {
+  background-color: green;
+  width: 48%;
+}
+
+/* media queries */
+@media screen and (max-width: 725px) {
+}
+
+@media screen and (max-width: 480px) {
+  .homepage {
+    flex-direction: column-reverse;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .homepage .right_hero {
+    width: 80%;
+  }
+  .homepage .left_hero {
+    width: 80%;
+  }
+}
