@@ -109,9 +109,8 @@
   font-weight: 700;
 }
 
-.resume_cont .experience {
-  /* border: 1px dashed var(--little-color); */
-}
+/* .resume_cont .experience {
+} */
 
 .resume_cont .experience .exp_content {
   display: flex;
