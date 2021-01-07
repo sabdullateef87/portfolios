@@ -3,7 +3,8 @@
 :root {
   --primary-color: #100f2e;
   --secondary-color: #0a0919;
-  --little-color: #fdbe34;
+  --little-color: #fec576;
+  --smoke: #c2b3b8;
 }
 * {
   padding: 0;
@@ -14,4 +15,3 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
-

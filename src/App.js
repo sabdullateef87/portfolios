@@ -1,12 +1,26 @@
 import "./App.css";
-import { Homepage, Aboutpage, Navbar } from "./Pages";
+import {
+  Homepage,
+  About,
+  Navbar,
+  Services,
+  MyWork,
+  Resume,
+  Contact,
+  Footer,
+} from "./Pages";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
+      {/* <Navbar /> */}
       <Homepage />
-      {/* <Aboutpage /> */}
+      <About />
+      <Services />
+      <MyWork />
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 }

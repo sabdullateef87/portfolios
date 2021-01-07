@@ -1,7 +1,7 @@
 .homepage_container {
   background-color: var(--secondary-color);
-  padding: 100px 0;
 }
+
 .homepage {
   width: 75%;
   margin: auto;
@@ -9,10 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 92vh;
+  /* z-index: 10; */
 }
 
 .homepage .left_hero {
   width: 48%;
+  /* z-index: 10; */
 }
 
 .homepage .left_hero h3 {
@@ -39,9 +42,9 @@
 }
 .homepage .left_hero .btn.download {
   background-color: var(--little-color);
-  color: #ffffff;
+  color: #000;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .homepage .left_hero .btn.hire {
@@ -49,16 +52,43 @@
   border: 2px solid var(--little-color);
   color: var(--little-color);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .homepage .right_hero {
   background-color: green;
   width: 48%;
+  height: 400px;
+  z-index: 10;
 }
 
 /* media queries */
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 750px) {
+  .homepage .right_hero {
+    display: none;
+  }
+  .homepage .left_hero {
+    width: 100%;
+    z-index: 10;
+  }
+  .homepage_container {
+    background-image: url(../../Images/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  .homepage_container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.5;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -67,11 +97,5 @@
     gap: 1em;
     align-items: center;
     justify-content: center;
-  }
-  .homepage .right_hero {
-    width: 80%;
-  }
-  .homepage .left_hero {
-    width: 80%;
   }
 }

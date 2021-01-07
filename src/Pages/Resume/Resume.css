@@ -1,0 +1,163 @@
+.resume_container {
+  background-color: var(--secondary-color);
+  padding: 10vh 0;
+}
+
+.resume {
+  width: 75%;
+  margin: auto;
+  color: #ffffff;
+}
+.resume .page_header {
+  text-align: center;
+}
+
+.resume .page_header h1 {
+  font-weight: 400;
+  text-align: center;
+}
+.resume .page_header p {
+  font-weight: 400;
+  text-align: center;
+  font-family: "Nunito", san-serif;
+  color: var(--little-color);
+  margin-top: 10px;
+}
+
+.resume .resume_cont {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 5vh;
+  gap: 2em;
+}
+
+.resume_cont .education {
+  flex: 1 1 30%;
+  padding: 20px;
+}
+.resume_cont .experience {
+  flex: 1 1 30%;
+  padding: 20px;
+}
+
+.resume_cont .heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.resume_cont .education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* border: 1px dashed var(--little-color); */
+}
+
+.resume_cont .education .edu_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1em;
+}
+
+.resume_cont .education .edu_content .card {
+  background-color: white;
+  min-height: 200px;
+  max-width: 70%;
+  /* margin-left: auto; */
+  color: black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h4 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.card h4::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: blue;
+  left: -20px;
+}
+
+.card h5 {
+  margin-bottom: 0.6em;
+  color: blue;
+}
+.card p,
+.card ul li {
+  margin-top: 1em;
+  font-size: 14px;
+  color: #c4c4c4;
+  font-weight: 700;
+}
+
+.card p strong {
+  margin-top: 1em;
+  font-size: 14px;
+  color: #816464;
+  font-weight: 700;
+}
+
+.resume_cont .experience {
+  /* border: 1px dashed var(--little-color); */
+}
+
+.resume_cont .experience .exp_content {
+  display: flex;
+  flex-direction: column;
+}
+.resume_cont .experience .exp_content .card {
+  background-color: white;
+  max-width: 70%;
+  min-height: 200px;
+  /* margin-left: auto; */
+  color: black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+/* media queries */
+@media screen and (max-width: 947px) {
+  .resume_cont .experience .exp_content .card {
+    max-width: 100%;
+  }
+  .resume_cont .education .edu_content .card {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .resume_cont .experience {
+    padding: 0;
+  }
+  .resume_cont .education {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .resume_cont .experience,
+  .resume_cont .education {
+    flex: 1 1 100%;
+  }
+  .resume_cont .heading {
+    align-self: flex-start;
+  }
+  .resume_cont {
+    flex-direction: column-reverse;
+  }
+}

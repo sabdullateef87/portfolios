@@ -10,7 +10,7 @@ function Navbar() {
           <li>About</li>
           <li>Services</li>
           <li>Portfolio</li>
-          <li>Blog</li>
+          <li>Resume</li>
           <li>Contact</li>
         </ul>
       </div>

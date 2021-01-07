@@ -1,0 +1,112 @@
+.about_container {
+  background-color: var(--primary-color);
+  padding: 10vh 0;
+  overflow-x: hidden;
+}
+
+.about {
+  width: 75%;
+  margin: auto;
+  color: #ffffff;
+}
+
+.about .page_name {
+  padding: 0 0 80px 0;
+  text-align: center;
+}
+.about .page_name h1 {
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+}
+
+.about .page_name p {
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  font-family: "Nunito", san-serif;
+  color: var(--little-color);
+  margin-top: 10px;
+}
+
+.top_element {
+  /* min-height: 400px; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.top_element .image_container {
+  width: 42%;
+  font-family: "Nunito", san-serif;
+  background-color: red;
+  animation: slideInLeft 1.5s ease;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(+200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.top_element .description_container {
+  width: 54%;
+  font-family: "Nunito", san-serif;
+  animation: slideInRight 1.5s ease;
+}
+
+.top_element .description_container h1 {
+  color: var(--little-color);
+}
+.top_element .description_container h2 {
+  color: #ffffff;
+  margin: 20px 0;
+}
+.top_element .description_container p {
+  color: #ffffff;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.top_element .description_container .btn {
+  padding: 15px 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.top_element .description_container .btn.download {
+  background-color: var(--little-color);
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+}
+.top_element .description_container .btn.hire {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--little-color);
+  color: var(--little-color);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 782px) {
+  .image_container {
+    display: none;
+  }
+  .top_element .description_container {
+    width: 100%;
+  }
+}

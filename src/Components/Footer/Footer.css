@@ -1,0 +1,15 @@
+.footer_cont {
+  padding: 10vh 0;
+  background-color: var(--secondary-color);
+}
+.footer {
+  width: 75%;
+  height: 100px;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+}

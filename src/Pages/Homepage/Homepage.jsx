@@ -1,5 +1,6 @@
 import React from "react";
 import "./Homepage.css";
+
 function Homepage() {
   return (
     <div className={`homepage_container`}>
@@ -8,10 +9,11 @@ function Homepage() {
           <h3>Hi, i am</h3>
           <h1>Abdullateef Suleiman</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            error sunt consequatur cum accusamus maxime officia, ad nostrum amet
-            rem!
+            I have 2 years experience in developing and designing rich web
+            application and other software development services.
           </p>
+          <br />
+
           <h2>Sotware Developer</h2>
           <div>
             <button className={`btn download`}>DOWNLOAD CV</button>
